@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: Roboto;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: #3d1766;
+}
+
+.left-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-image {
+  width: 50%;
+  height: 100%;
+}
+
+.right-image > img {
+  height: 100%;
+}
+
+.inner-left-container {
+  padding: 80px;
+  text-align: left;
+  color: white;
+}
+
+.inner-left-container > input {
+  margin: 15px 0;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  margin-bottom: 25px;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  color: white;
+  outline: none;
+}
+
+.inner-left-container > button {
+  background: white;
+  border: none;
+  color: black;
+  padding: 5px 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-group > button {
+  width: 30%;
+  padding: 5px 0;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-group > .selected-btn {
+  border: none;
+  padding: 5px 15px;
+  color: black;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .right-image {
+    display: none;
+  }
+
+  .left-container {
+    width: 100%;
+  }
+}
